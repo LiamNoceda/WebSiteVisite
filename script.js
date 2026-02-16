@@ -6,5 +6,12 @@ let element =document.querySelector('#e');
 if (butt && element) {
     butt.addEventListener('click', () => {
     element.classList.toggle('active');
+    console.log('Button clicked, toggling information block visibility');
+
+    if (element.classList.contains('active')) {
+        console.log('Information block is now visible');
+    } else {
+        console.log('Information block is now hidden');
+    }
 });
 };
