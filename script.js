@@ -5,10 +5,12 @@ const element =document.querySelector('#e');
 // for disabled input
 const contact = document.querySelector("#contact");
 const send = document.querySelector("#send");
+
+// state input F
 contact.disabled = false;
 
 // Disabled input false or true
-send.addEventListener("click", function() {
+send.addEventListener("click", () => {
     if (contact.disabled) {
         contact.disabled = false;
         console.log("Input: false");
